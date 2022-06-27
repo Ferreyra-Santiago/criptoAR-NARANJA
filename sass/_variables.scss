@@ -1,0 +1,56 @@
+//variables
+$blanco:white;
+$azul:#05086e;
+$gris-celeste:#d6e6f2;
+
+//extend
+%gradiant-caja{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(215,223,252,1) 0%, rgba(255,255,255,1) 0%, rgba(215,223,252,1) 84% );
+}
+
+
+%gradiant-header-footer{
+   background-color: #1d1c21;
+
+}
+
+%height-width-100porciento{
+    width: 100%;
+    height: 100%;  
+}
+
+%titulos-contacto{
+    font-family: poppins;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+%decoracion-caja-cloud-mining{
+    text-align: center;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(215,223,252,1) 0%, rgba(255,255,255,1) 0%, rgba(215,223,252,1) 84% );
+    border: solid  white;
+}
+
+%fuente-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+// mixin
+
+@mixin rig-mineria-venta($text-align, $decoration) {
+    text-align: $text-align;
+    justify-self:$decoration;    
+}
+
+@mixin margin-top-buttom($top,$buttom) {
+    margin-top: $top;
+    margin-bottom: $buttom;
+}
+
+//maps
+$colores:(
+    "blanco":white,
+    "azul":#05086e,
+)
+
+

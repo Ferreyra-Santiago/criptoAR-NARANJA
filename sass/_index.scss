@@ -1,0 +1,442 @@
+/* Index */
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    height: 1500px;
+    width: 100%;
+    position: relative;
+}
+
+.eslogan{
+    grid-row: 1/2;
+    grid-column: 4/10 ;
+    font-family: poppins;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    animation-name: bounceIn;
+    animation-duration: 1s;
+}
+.contenido{
+    margin-top: 30px;
+    grid-column: 4/7;
+    grid-row: 2/6;
+    justify-content: center;
+    color: black;
+
+            p{
+            width: 100%;
+            text-align: center;
+            @extend %fuente-roboto;
+            }
+
+            ul{
+            margin: 0px 0px 10px;
+            list-style: none;
+            text-decoration: underline;
+            text-align: center;
+            @extend %fuente-roboto;
+            }
+
+            h5{
+                font-family: poppins;
+                font-size: 25px;
+                text-align: center;
+                text-decoration: underline;
+                color:#e23615;
+            }
+}
+
+.img-index{
+    grid-column: 7/9;
+    grid-row: 2/4;
+
+    img{
+        width: 350px;
+    }
+}
+
+
+.img-index2{
+    grid-column: 6/9;
+    grid-row: 10/12;
+
+    img{
+        width: 400px;
+    }    
+}
+
+.mensaje{
+    grid-column: 4/7;
+    grid-row: 10/13;
+    position: relative;
+
+    h4{
+        color: #e23615;
+        text-decoration: underline;
+        margin: 20px;
+    }
+    p{
+        @extend %fuente-roboto;
+    }
+}
+
+.button-w{
+    grid-column: 4/7;
+    grid-row: 11;
+
+    input{
+        font-family: poppins;
+        font-size: 16px;
+        padding: 5px   5px;
+        cursor: pointer;
+    }
+}
+/* venta de rig y cloudmining  index */
+
+.venta-rig{
+    grid-column: 4/9;
+    grid-row: 5/7;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: solid black;
+    overflow: hidden;
+    margin-top: 15px; 
+    @extend %gradiant-caja;
+}
+
+.img-serv{
+    width: 40%;
+    height: 100%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    transition: 0.5s;
+    object-fit: cover;
+    
+    &:hover{
+        transform: scale(0.8);
+    }
+}
+
+
+.nombre{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    font-family: poppins;
+    text-decoration: underline;
+    text-align: center;
+}
+.descripcion{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    text-align: center;
+    @extend %fuente-roboto;
+}
+
+.butto{
+    position: absolute;
+    left: 60%;
+    top: 80%;
+}
+.cloudmining{
+    grid-column: 4/9;
+    grid-row: 8/10;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    border: solid   black;
+    overflow: hidden;
+    @extend %fuente-roboto;
+    @extend %gradiant-caja;
+}
+.cloudmining-boots{
+display: none;
+}
+
+.venta-rig-boots{
+    display: none;
+}
+.button{
+    position: absolute;
+    left: 55%;
+    top: 80%;
+}
+// fin de index
+
+
+/* mediaqueries mobil y tablet index*/
+@media screen and (min-width: 350px) and (max-width: 750px) {
+
+    .bootstrap{
+        display:  block;
+    }
+    
+    .img-logo-boots{
+        width: 100px;
+    }
+    
+    .navbar{
+        background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+        height: 100px;
+
+        h5{
+            color: white;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: underline;
+        }
+    }
+    
+    .nav-item{
+        display: flex;
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 1px white;
+        border-radius: 5px;
+        justify-content: center;
+    }
+    
+    .offcanvas{
+        background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    }
+    
+    .offcanvas-title{
+        font-family: 'popins';
+        font-size: 20px;
+    }
+    
+    .img-logo-boots{
+        animation-name: img-logo-boots;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 5s;
+        animation-delay: 1s;
+    }
+    
+    @keyframes img-logo-boots{
+        0%{
+            transform: rotatey(0deg);
+        }
+        35%{
+            transform: rotatey(80deg) ;
+        }
+    
+        50%{
+            transform: rotatey(180deg);
+    
+        }
+        75%{
+            transform: rotatey(210deg);
+        }
+        100%{
+            transform: rotatey(360deg);
+        }
+    }
+    
+    .container-header a h1{
+        display: none;
+    }
+    
+    .nav-bar{
+        display: none;
+    }
+    .img-logo{
+        display: none;
+    }
+        .redes-sociales{
+        display: none;
+        }
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas:
+        "eslogan eslogan eslogan"
+        "contenido contenido contenido"
+        ". ventarig ."
+        ". cloudmining ."
+        ". . ."
+        ". . ."
+        ". mensaje ."
+        ;     
+    }
+    .eslogan {
+        grid-area: eslogan;
+
+            h3{
+            font-size: 30px;
+        }
+    }
+    
+    .img-index {
+        grid-area: imgindex;
+        display: none;
+    }
+    
+    
+    .contenido{
+        grid-area: contenido;
+        text-align: center;
+    }
+    
+    .venta-rig{
+        display: none;
+        }
+
+    .cloudmining{
+        display: none;
+    }
+
+    .venta-rig-boots{
+        grid-area: ventarig;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        border: groove gray;
+        @include margin-top-buttom (0px, 15px);
+        @include rig-mineria-venta (center, center);
+        h5{
+            font-family: poppins;
+            text-decoration: underline;
+        }
+    }
+    
+    .cloudmining-boots{
+        display: block;
+        grid-area: cloudmining;
+        font-family: 'Roboto', sans-serif;
+        border: groove gray;
+        @include rig-mineria-venta (center, center);
+        h5{
+            font-family: poppins;
+            text-decoration: underline;
+        }
+    }
+    
+    .mensaje{
+        grid-area: mensaje;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .img-index2{
+        display: none;
+    }
+    
+
+    
+    
+    .footer .redes-sociales{
+        display: block;
+    }
+    
+    .footer{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "contacto contacto redes"
+        ". . copi";
+        p{
+        grid-area: copi;
+        }
+    }
+    
+    .contactof{
+        grid-area: contacto;
+
+        h2{
+            font-size: 20px;
+        }
+    }
+    
+    
+    .redes-sociales{
+        grid-area: redes;
+    }
+    }
+    
+      /* fin de mobil  y tabler index */
+    
+      /* mediaqueries para laptop y  dekstop index */
+    @media screen and (min-width: 751px) and (max-width: 1400px) {
+    .nav-bar{
+        display: block;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(12,1fr);
+        grid-template-areas: 
+        "eslogan eslogan eslogan eslogan  eslogan eslogan"
+        "contenido  contenido contenido imgindex imgindex ."
+        ". ventarig ventarig ventarig ventarig ."
+        ". ventarig ventarig ventarig ventarig ."
+        ". ventarig ventarig ventarig ventarig ."
+        ". cloudmining cloudmining cloudmining cloudmining ."
+        ". cloudmining cloudmining cloudmining cloudmining ."
+        ". cloudmining cloudmining cloudmining cloudmining ."
+        ".  .   .   imgindex2   imgindex2   ."
+        ". mensaje mensaje imgindex2 imgindex2 ."
+        ". mensaje mensaje imgindex2 imgindex2 ."
+        ". buttonw . . . . ";
+    }
+    
+    .eslogan{
+        grid-area: eslogan; 
+    }
+    
+    .img-index{
+        grid-area: imgindex;
+    }
+    
+    .contenido{
+        grid-area: contenido;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .venta-rig{
+        grid-area:ventarig;
+    }
+    
+    .cloudmining{
+        grid-area:cloudmining;
+        margin-top: 50px;
+    }
+    
+    .mensaje{
+        grid-area: mensaje;
+        text-align: center;
+    }
+    .img-index2{
+        grid-area: imgindex2;
+
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    
+    .button-w{
+        grid-area:buttonw;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .contactof{
+
+        h2{
+            font-size: 20px;
+        }
+    }
+    }
+     /* fin de mediaqueries laptop y dekstop index!! */

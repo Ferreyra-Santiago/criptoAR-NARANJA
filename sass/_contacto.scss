@@ -1,0 +1,167 @@
+/* contacto */
+.container-contacto{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+
+.eslogan4{
+    grid-column: 5/9;
+    font-family: poppins;
+    font-size: 33px;
+    text-align: center;
+    text-decoration: underline;
+    animation-name: rubberBand;
+    animation-duration: 1s;
+    margin-bottom: 20px;
+}
+
+.text-telefonicamente{
+    font-family: poppins;
+    @extend %titulos-contacto;
+    color: #e03615;
+}
+
+.text-email{
+    font-family: poppins;
+    @extend %titulos-contacto;
+    color: #e03615;
+}
+
+.text-ubicacion{
+    font-family: poppins;
+    @extend %titulos-contacto;
+    color:#e03615;
+}
+
+.telofonos{
+    grid-column: 9/12;
+    grid-row: 2/3;
+    text-align: center;
+    position: relative;
+}
+
+.correo{
+    grid-column: 2/6;
+    grid-row: 2/3;
+    text-align: center;
+    position: relative;
+}
+
+.text-form{
+    font-family: poppins;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.Formulario{
+    grid-column: 5/9;
+    grid-row: 8/13;
+    @extend %gradiant-caja;
+    border: solid  $gris-celeste;
+}
+
+.input{
+    width: 50%;
+}
+
+.form{
+    @extend %fuente-roboto;
+    display: flex;
+    flex-direction: column;
+}
+
+.ubicacion{
+    grid-column: 1/13;
+    grid-row: 3/8;
+    text-align: center;
+    font-size: 15px;
+}
+
+.google-maps{
+    width: 100%;
+    height: 75%;
+}
+
+/*  fin de contacto   */
+
+    /* mediaqueries contacto mobile y tablet*/
+    @media screen and (min-width: 350px) and (max-width: 750px) {
+        .container-contacto{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(7,1fr);
+            grid-template-areas:
+            "eslogan4 eslogan4 eslogan4" 
+            "telefonos telefonos telefonos"
+            "correo correo correo"
+            "ubicacion ubicacion ubicacion"
+            "ubicacion ubicacion ubicacion"
+            "formulario formulario formulario"
+            "formulario formulario  formulario";
+        }
+        .eslogan4{
+            grid-area: eslogan4;
+            margin-top: 100px;
+        }
+        
+        .telofonos{
+            grid-area: telefonos;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .whatsapp{ 
+            display: none;
+        } 
+        .correo-electronico{
+            display: none;
+        }
+        .correo{
+            grid-area: correo;
+            text-align: center;
+        }
+        .ubicacion{
+            grid-area: ubicacion;
+        }
+        .Formulario{
+            grid-area: formulario;
+            margin-top: 20px;
+        
+        }
+        }
+        /* fin demediaqueris mobile y tablet contacto */
+        
+        /*      mediaqueries laptop y dekstop contacto */
+        @media screen and (min-width: 751px) and (max-width: 1324px) {
+        .container-contacto{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(7,1fr);
+            grid-template-areas: 
+            ". eslogan4 eslogan4 eslogan4 eslogan4  ."
+            ". correo correo telefonos  telefonos telefonos"
+            "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion"
+            "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion"
+            "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion"
+            ". formulario formulario formulario formulario ."
+            ". formulario formulario formulario formulario .";
+        } 
+        .eslogan4{
+            grid-area: eslogan4;
+        }
+        .telofonos{
+            grid-area: telefonos;
+        }
+        .correo{
+            grid-area: correo;
+        }
+        .ubicacion{
+            grid-area: ubicacion;
+        }
+        .Formulario{
+            grid-area: formulario;
+        
+        }
+        }
+        /* Fin de mediaqueries  laptop y dekstop contacto */

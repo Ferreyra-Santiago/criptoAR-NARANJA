@@ -1,0 +1,1079 @@
+.Formulario, .cloudmining, .venta-rig {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(215, 223, 252) 0%, rgb(255, 255, 255) 0%, rgb(215, 223, 252) 84%);
+}
+
+.footer, .container-header {
+  background-color: #1d1c21;
+}
+
+.img-caracteristicas {
+  width: 100%;
+  height: 100%;
+}
+
+.text-ubicacion, .text-email, .text-telefonicamente {
+  font-family: poppins;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.litecoin, .ethereum-classic, .ethereum, .bitcoin {
+  text-align: center;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(215, 223, 252) 0%, rgb(255, 255, 255) 0%, rgb(215, 223, 252) 84%);
+  border: solid white;
+}
+
+.texto-cloud-mining, .form, .Rig-mineria-venta6, .Rig-mineria-venta5, .Rig-mineria-venta4, .Rig-mineria-venta3, .Rig-mineria-venta2, .Rig-mineria-venta1, .cloudmining, .descripcion, .mensaje p, .contenido ul, .contenido p {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: poppins;
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+}
+.bootstrap {
+  display: none;
+}
+
+.container-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: " img  h1  ." "img   nav .";
+  height: 100px;
+  justify-items: center;
+}
+.container-header h1 {
+  grid-area: h1;
+  font-family: poppins;
+  color: white;
+  margin-bottom: 10px;
+}
+
+nav {
+  grid-area: nav;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  padding-left: 50px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+.img-logo {
+  grid-area: img;
+}
+.img-logo img {
+  width: 130px;
+  height: 90%;
+}
+
+.redes-sociales img {
+  width: 25px;
+}
+
+/* css  header*/
+/*          Footer            */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: " . contactof redes-sociales" "copi copi  .";
+  width: 100%;
+  height: 100px;
+}
+.footer p {
+  grid-area: copi;
+  color: white;
+}
+
+.contactof {
+  grid-area: contactof;
+  text-align: center;
+  font-family: poppins;
+  color: white;
+}
+.contactof h2 {
+  font-size: 25px;
+}
+
+.redes-sociales {
+  grid-area: redes-sociales;
+}
+
+/* fin de footer */
+/* Index */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 1500px;
+  width: 100%;
+  position: relative;
+}
+
+.eslogan {
+  grid-row: 1/2;
+  grid-column: 4/10;
+  font-family: poppins;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.contenido {
+  margin-top: 30px;
+  grid-column: 4/7;
+  grid-row: 2/6;
+  justify-content: center;
+  color: black;
+}
+.contenido p {
+  width: 100%;
+  text-align: center;
+}
+.contenido ul {
+  margin: 0px 0px 10px;
+  list-style: none;
+  text-decoration: underline;
+  text-align: center;
+}
+.contenido h5 {
+  font-family: poppins;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+  color: #e23615;
+}
+
+.img-index {
+  grid-column: 7/9;
+  grid-row: 2/4;
+}
+.img-index img {
+  width: 350px;
+}
+
+.img-index2 {
+  grid-column: 6/9;
+  grid-row: 10/12;
+}
+.img-index2 img {
+  width: 400px;
+}
+
+.mensaje {
+  grid-column: 4/7;
+  grid-row: 10/13;
+  position: relative;
+}
+.mensaje h4 {
+  color: #e23615;
+  text-decoration: underline;
+  margin: 20px;
+}
+.button-w {
+  grid-column: 4/7;
+  grid-row: 11;
+}
+.button-w input {
+  font-family: poppins;
+  font-size: 16px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+/* venta de rig y cloudmining  index */
+.venta-rig {
+  grid-column: 4/9;
+  grid-row: 5/7;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: solid black;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.img-serv {
+  width: 40%;
+  height: 100%;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.img-serv:hover {
+  transform: scale(0.8);
+}
+
+.nombre {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  font-family: poppins;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.descripcion {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  text-align: center;
+}
+
+.butto {
+  position: absolute;
+  left: 60%;
+  top: 80%;
+}
+
+.cloudmining {
+  grid-column: 4/9;
+  grid-row: 8/10;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  border: solid black;
+  overflow: hidden;
+}
+
+.cloudmining-boots {
+  display: none;
+}
+
+.venta-rig-boots {
+  display: none;
+}
+
+.button {
+  position: absolute;
+  left: 55%;
+  top: 80%;
+}
+
+/* mediaqueries mobil y tablet index*/
+@media screen and (min-width: 350px) and (max-width: 750px) {
+  .bootstrap {
+    display: block;
+  }
+
+  .img-logo-boots {
+    width: 100px;
+  }
+
+  .navbar {
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    height: 100px;
+  }
+  .navbar h5 {
+    color: white;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: underline;
+  }
+
+  .nav-item {
+    display: flex;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px white;
+    border-radius: 5px;
+    justify-content: center;
+  }
+
+  .offcanvas {
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+  }
+
+  .offcanvas-title {
+    font-family: "popins";
+    font-size: 20px;
+  }
+
+  .img-logo-boots {
+    animation-name: img-logo-boots;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+
+  @keyframes img-logo-boots {
+    0% {
+      transform: rotatey(0deg);
+    }
+    35% {
+      transform: rotatey(80deg);
+    }
+    50% {
+      transform: rotatey(180deg);
+    }
+    75% {
+      transform: rotatey(210deg);
+    }
+    100% {
+      transform: rotatey(360deg);
+    }
+  }
+  .container-header a h1 {
+    display: none;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .img-logo {
+    display: none;
+  }
+
+  .redes-sociales {
+    display: none;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "eslogan eslogan eslogan" "contenido contenido contenido" ". ventarig ." ". cloudmining ." ". . ." ". . ." ". mensaje .";
+  }
+
+  .eslogan {
+    grid-area: eslogan;
+  }
+  .eslogan h3 {
+    font-size: 30px;
+  }
+
+  .img-index {
+    grid-area: imgindex;
+    display: none;
+  }
+
+  .contenido {
+    grid-area: contenido;
+    text-align: center;
+  }
+
+  .venta-rig {
+    display: none;
+  }
+
+  .cloudmining {
+    display: none;
+  }
+
+  .venta-rig-boots {
+    grid-area: ventarig;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    border: groove gray;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-self: center;
+  }
+  .venta-rig-boots h5 {
+    font-family: poppins;
+    text-decoration: underline;
+  }
+
+  .cloudmining-boots {
+    display: block;
+    grid-area: cloudmining;
+    font-family: "Roboto", sans-serif;
+    border: groove gray;
+    text-align: center;
+    justify-self: center;
+  }
+  .cloudmining-boots h5 {
+    font-family: poppins;
+    text-decoration: underline;
+  }
+
+  .mensaje {
+    grid-area: mensaje;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .img-index2 {
+    display: none;
+  }
+
+  .footer .redes-sociales {
+    display: block;
+  }
+
+  .footer {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "contacto contacto redes" ". . copi";
+  }
+  .footer p {
+    grid-area: copi;
+  }
+
+  .contactof {
+    grid-area: contacto;
+  }
+  .contactof h2 {
+    font-size: 20px;
+  }
+
+  .redes-sociales {
+    grid-area: redes;
+  }
+}
+/* fin de mobil  y tabler index */
+/* mediaqueries para laptop y  dekstop index */
+@media screen and (min-width: 751px) and (max-width: 1400px) {
+  .nav-bar {
+    display: block;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: "eslogan eslogan eslogan eslogan  eslogan eslogan" "contenido  contenido contenido imgindex imgindex ." ". ventarig ventarig ventarig ventarig ." ". ventarig ventarig ventarig ventarig ." ". ventarig ventarig ventarig ventarig ." ". cloudmining cloudmining cloudmining cloudmining ." ". cloudmining cloudmining cloudmining cloudmining ." ". cloudmining cloudmining cloudmining cloudmining ." ".  .   .   imgindex2   imgindex2   ." ". mensaje mensaje imgindex2 imgindex2 ." ". mensaje mensaje imgindex2 imgindex2 ." ". buttonw . . . . ";
+  }
+
+  .eslogan {
+    grid-area: eslogan;
+  }
+
+  .img-index {
+    grid-area: imgindex;
+  }
+
+  .contenido {
+    grid-area: contenido;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .venta-rig {
+    grid-area: ventarig;
+  }
+
+  .cloudmining {
+    grid-area: cloudmining;
+    margin-top: 50px;
+  }
+
+  .mensaje {
+    grid-area: mensaje;
+    text-align: center;
+  }
+
+  .img-index2 {
+    grid-area: imgindex2;
+  }
+  .img-index2 img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .button-w {
+    grid-area: buttonw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactof h2 {
+    font-size: 20px;
+  }
+}
+/* fin de mediaqueries laptop y dekstop index!! */
+/*      productos       */
+.eslogan2 {
+  grid-row: 1/1;
+  grid-column: 4/9;
+  font-family: poppins;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  margin-bottom: 20px;
+}
+
+.container-productos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  height: 400px;
+  width: 100%;
+}
+
+.titulo {
+  grid-column: 3/10;
+  grid-row: 2/3;
+  font-size: 25px;
+  font-family: poppins;
+  text-align: center;
+  color: #e23615;
+}
+
+.lista-p {
+  grid-column: 4/6;
+  grid-row: 4/6;
+  list-style: none;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+}
+
+.imagen-portada {
+  grid-column: 10/13;
+  grid-row: 1/5;
+}
+.imagen-portada img {
+  width: 200px;
+}
+
+/*   rig minerias en venta   */
+.container-rigs {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  transition: 0, 5s;
+  object-fit: cover;
+}
+.container-rigs .card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.Rig-mineria-venta1 {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  text-align: center;
+  justify-self: center;
+}
+
+.Rig-mineria-venta2 {
+  grid-column: 6/8;
+  grid-row: 1/3;
+  text-align: center;
+  justify-self: center;
+}
+
+.Rig-mineria-venta3 {
+  grid-column: 10/12;
+  grid-row: 1/3;
+  text-align: center;
+  justify-self: center;
+}
+
+.Rig-mineria-venta4 {
+  grid-column: 2/4;
+  grid-row: 4/6;
+  text-align: center;
+  justify-self: center;
+}
+
+.Rig-mineria-venta5 {
+  grid-column: 6/8;
+  grid-row: 4/6;
+  text-align: center;
+  justify-self: center;
+}
+
+.Rig-mineria-venta6 {
+  grid-column: 10/12;
+  grid-row: 4/6;
+  text-align: center;
+  justify-self: center;
+}
+
+/*   rig minerias / procutos  fin   */
+/* mediaqueries para mobile y tablet productos */
+@media screen and (min-width: 350px) and (max-width: 750px) {
+  .container-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "eslogan2 eslogan2 eslogan2" "titulo titulo titulo" "lista lista img";
+  }
+
+  .eslogan2 {
+    grid-area: eslogan2;
+    font-size: 20px;
+  }
+
+  .titulo {
+    grid-area: titulo;
+    margin-top: 20px;
+  }
+
+  .lista-p {
+    grid-area: lista;
+    list-style: none;
+    text-decoration: underline;
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .imagen-portada {
+    grid-area: img;
+  }
+  .imagen-portada img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .container-rigs {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "rig1 rig1 rig1" "rig2 rig2 rig2" "rig3 rig3 rig3" "rig4 rig4 rig4" "rig5 rig5 rig5" "rig6 rig6 rig6";
+  }
+
+  .img-caracteristicas {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .img-caracteristicas:hover {
+    transform: scale(1.1);
+  }
+
+  .modal-content {
+    height: 300px;
+    width: 100%;
+  }
+
+  .Rig-mineria-venta1 {
+    grid-area: rig1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Rig-mineria-venta2 {
+    grid-area: rig2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Rig-mineria-venta3 {
+    grid-area: rig3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Rig-mineria-venta4 {
+    grid-area: rig4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Rig-mineria-venta5 {
+    grid-area: rig5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Rig-mineria-venta6 {
+    grid-area: rig6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+/* mediaqueries para mobile y tablet productos fin */
+/* mediaqueries  para laptop y dekstop !productos! */
+@media screen and (min-width: 751px) and (max-width: 1324px) {
+  .container-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ". eslogan2 eslogan2  eslogan2 eslogan2 ." ". . titulo titulo img . " ". . lista . img .";
+  }
+
+  .eslogan2 {
+    grid-area: eslogan2;
+  }
+
+  .titulo {
+    grid-area: titulo;
+  }
+
+  .lista-p {
+    grid-area: lista;
+    list-style: none;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .imagen-portada {
+    grid-area: img;
+  }
+  .imagen-portada img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-rigs {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ". rig1 rig1 . rig2 rig2 ." ". rig3 rig3 . rig4 rig4 ." ". rig5 rig5 . rig6 rig6 . ";
+  }
+
+  .Rig-mineria-venta1 {
+    grid-area: rig1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Rig-mineria-venta2 {
+    grid-area: rig2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Rig-mineria-venta3 {
+    grid-area: rig3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Rig-mineria-venta4 {
+    grid-area: rig4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Rig-mineria-venta5 {
+    grid-area: rig5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Rig-mineria-venta6 {
+    grid-area: rig6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+/* mediaqueries  para laptop y dekstop !productos! fin*/
+/* contacto */
+.container-contacto {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.eslogan4 {
+  grid-column: 5/9;
+  font-family: poppins;
+  font-size: 33px;
+  text-align: center;
+  text-decoration: underline;
+  animation-name: rubberBand;
+  animation-duration: 1s;
+  margin-bottom: 20px;
+}
+
+.text-telefonicamente {
+  font-family: poppins;
+  color: #e03615;
+}
+
+.text-email {
+  font-family: poppins;
+  color: #e03615;
+}
+
+.text-ubicacion {
+  font-family: poppins;
+  color: #e03615;
+}
+
+.telofonos {
+  grid-column: 9/12;
+  grid-row: 2/3;
+  text-align: center;
+  position: relative;
+}
+
+.correo {
+  grid-column: 2/6;
+  grid-row: 2/3;
+  text-align: center;
+  position: relative;
+}
+
+.text-form {
+  font-family: poppins;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.Formulario {
+  grid-column: 5/9;
+  grid-row: 8/13;
+  border: solid #d6e6f2;
+}
+
+.input {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ubicacion {
+  grid-column: 1/13;
+  grid-row: 3/8;
+  text-align: center;
+  font-size: 15px;
+}
+
+.google-maps {
+  width: 100%;
+  height: 75%;
+}
+
+/*  fin de contacto   */
+/* mediaqueries contacto mobile y tablet*/
+@media screen and (min-width: 350px) and (max-width: 750px) {
+  .container-contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "eslogan4 eslogan4 eslogan4" "telefonos telefonos telefonos" "correo correo correo" "ubicacion ubicacion ubicacion" "ubicacion ubicacion ubicacion" "formulario formulario formulario" "formulario formulario  formulario";
+  }
+
+  .eslogan4 {
+    grid-area: eslogan4;
+    margin-top: 100px;
+  }
+
+  .telofonos {
+    grid-area: telefonos;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .whatsapp {
+    display: none;
+  }
+
+  .correo-electronico {
+    display: none;
+  }
+
+  .correo {
+    grid-area: correo;
+    text-align: center;
+  }
+
+  .ubicacion {
+    grid-area: ubicacion;
+  }
+
+  .Formulario {
+    grid-area: formulario;
+    margin-top: 20px;
+  }
+}
+/* fin demediaqueris mobile y tablet contacto */
+/*      mediaqueries laptop y dekstop contacto */
+@media screen and (min-width: 751px) and (max-width: 1324px) {
+  .container-contacto {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: ". eslogan4 eslogan4 eslogan4 eslogan4  ." ". correo correo telefonos  telefonos telefonos" "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion" "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion" "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion" ". formulario formulario formulario formulario ." ". formulario formulario formulario formulario .";
+  }
+
+  .eslogan4 {
+    grid-area: eslogan4;
+  }
+
+  .telofonos {
+    grid-area: telefonos;
+  }
+
+  .correo {
+    grid-area: correo;
+  }
+
+  .ubicacion {
+    grid-area: ubicacion;
+  }
+
+  .Formulario {
+    grid-area: formulario;
+  }
+}
+/* Fin de mediaqueries  laptop y dekstop contacto */
+/*  cloud mining */
+.container-cloud-mining {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.eslogan5 {
+  grid-column: 4/10;
+  font-family: poppins;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+  animation-name: rubberBand;
+  animation-duration: 1s;
+  margin-bottom: 20px;
+}
+
+.img-promo-cripto {
+  width: 70%;
+  height: 100%;
+  grid-column: 5/9;
+  grid-row: 3/5;
+  margin-left: 50px;
+}
+
+.texto-cloud-mining {
+  grid-column: 5/9;
+  grid-row: 2/3;
+  font-size: 20px;
+  color: black;
+}
+
+.container-cripto {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.bitcoin {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.ethereum {
+  grid-column: 5/6;
+  grid-row: 1/3;
+}
+
+.ethereum-classic {
+  grid-column: 2/3;
+  grid-row: 4/6;
+}
+
+.litecoin {
+  grid-column: 5/6;
+  grid-row: 4/6;
+}
+
+.ethereum {
+  grid-column: 5/6;
+  grid-row: 1/3;
+}
+
+.ethereum-classic {
+  grid-column: 2/3;
+  grid-row: 4/6;
+}
+
+.litecoin {
+  grid-column: 5/6;
+  grid-row: 4/6;
+}
+
+/* fin de  cloud mining */
+/* mediaqueries mobile y tablet cloud  mining */
+@media screen and (min-width: 350px) and (max-width: 750px) {
+  .container-cloud-mining {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "eslogan5 eslogan5 eslogan5" "textocloud textocloud  textocloud" "textocloud textocloud  textocloud" ". imgcripto .";
+  }
+
+  .eslogan5 {
+    grid-area: eslogan5;
+    margin-top: 50px;
+  }
+
+  .texto-cloud-mining {
+    grid-area: textocloud;
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 8px;
+  }
+
+  .img-promo-cripto {
+    grid-area: imgcripto;
+    width: 150px;
+    margin: 0%;
+  }
+
+  .container-cripto {
+    margin-top: 50px;
+  }
+
+  .container-cripto {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+/* fin de   mediaqueries mobile y tablet cloud mining */
+/* mediaqueries laptop y dekstop cloud mining */
+@media screen and (min-width: 751px) and (max-width: 1324px) {
+  .container-cloud-mining {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ". . eslogan5 eslogan5 . . " ". textocloud textocloud textocloud textocloud . " ". .  imgcripto imgcripto . .";
+  }
+
+  .eslogan5 {
+    grid-area: eslogan5;
+    margin-top: 100px;
+  }
+
+  .texto-cloud-mining {
+    grid-area: textocloud;
+    margin-top: 50px;
+  }
+
+  .img-promo-cripto {
+    grid-area: imgcripto;
+    margin: 0px 100px;
+  }
+
+  .container-cripto {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+/* fin de mediaqueries laptop y dekstop */
+
+/*# sourceMappingURL=style.css.map */
