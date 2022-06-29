@@ -44,16 +44,10 @@
 .container-header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: " img  h1  ." "img   nav .";
-  height: 100px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: " .  img  ." ".   nav ." ". nav .";
+  height: 140px;
   justify-items: center;
-}
-.container-header h1 {
-  grid-area: h1;
-  font-family: poppins;
-  color: white;
-  margin-bottom: 10px;
 }
 
 nav {
@@ -75,7 +69,7 @@ nav ul li a {
 }
 .img-logo img {
   width: 130px;
-  height: 90%;
+  height: 100%;
 }
 
 .redes-sociales img {
